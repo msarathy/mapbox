@@ -42,6 +42,7 @@ export default {
     z-index: 100;
     background:#f4f4f4;
     text-align:left;
+    overflow-y:scroll;
 }
 #app .mapbox {
     padding:0;

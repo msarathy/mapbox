@@ -1,13 +1,38 @@
 <template>
-    <div id="mapbox"></div>
+    <!--<MglMap
+        container="mapbox"
+        :center.sync="center"
+        :accessToken="accessToken"
+        :mapStyle="mapStyle"
+        :minZoom="minZoom">
+        <MglMarker :coordinates.sync="markerCoordinates" color='green'/>
+    </MglMap>-->
+    <pre></pre>
 </template>
+
 <script>
+    /*import Mapbox from "mapbox-gl";
+    import { MglMap } from "vue-mapbox";
+    import { MglMarker } from 'vue-mapbox';
+
     export default {
-        components: { },
-        props: {
-            msg: String
+        components: {
+            MglMap,
+            MglMarker,
+        },
+        data() {
+            return {
+                accessToken: 'pk.eyJ1IjoicmVuZGV2IiwiYSI6ImNrYmtydGNmazEyMXcyb214azl2NXVqa3YifQ.ZgPlPO3yHX3or-Kltjaicg',
+                markerCoordinates: [ 151.209152, -33.875305 ],
+                mapStyle: 'mapbox://styles/mapbox/streets-v11',
+                center: [ 151.209152, -33.875305 ],
+                minZoom: 17,
+            }
+        },
+        created() {
+            this.mapbox = Mapbox;
         }
-    };
+    };*/
 </script>
 <style scoped>
     h3 { margin:40px 0 0; }
