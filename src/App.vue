@@ -34,7 +34,6 @@ export default {
   margin-top:10px;
 }
 #app .sidebar {
-    padding:10px 20px;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -43,6 +42,7 @@ export default {
     background:#f4f4f4;
     text-align:left;
     overflow-y:scroll;
+    padding:0;
 }
 #app .mapbox {
     padding:0;

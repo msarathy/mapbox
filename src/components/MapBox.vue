@@ -21,7 +21,7 @@
         },
         data() {
             return {
-                accessToken:"",
+                accessToken: 'pk.eyJ1IjoicmVuZGV2IiwiYSI6ImNrYmtydGNmazEyMXcyb214azl2NXVqa3YifQ.ZgPlPO3yHX3or-Kltjaicg',
                 mapStyle: 'mapbox://styles/mapbox/streets-v11',
                 center: [ 151.209152, -33.875305 ],
                 locations: [

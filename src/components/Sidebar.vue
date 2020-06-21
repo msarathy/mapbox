@@ -1,18 +1,9 @@
 <template>
     <div>
-        <h2>Sidebar</h2>
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Search by city, address..." aria-label="Search city, address" aria-describedby="search-input">
-            <div class="input-group-append">
-                <span class="input-group-text"><i class="fas fa-search-location"></i></span>
-            </div>
-        </div>
+        <h2>Archistar</h2>
         <div>
             <property :data="data"></property>
         </div>
-        <!--<pre>All Count={{ $options.jsonData.features.length }}</pre>
-        <pre>Count={{ data.length }}</pre>
-        <pre>{{ data }}</pre>-->
     </div>
 </template>
 
@@ -37,6 +28,7 @@
             parseJSON: function() {
                 let property = { };
                 for(let data in this.$options.jsonData.features) {
+                    property = { };
                     property.id = this.$options.jsonData.features[data].properties.project.id;
                     property.title = this.$options.jsonData.features[data].properties.project.Title;
                     property.address = this.$options.jsonData.features[data].properties.project.Address;
@@ -46,13 +38,14 @@
                     property.lat = this.$options.jsonData.features[data].properties.project.Lat;
 
                     this.data.push(property);
-                    //console.log(property);
+                    //console.log(property.address);
                 }
             }
         }
     }
 </script>
 <style scoped>
+    h2 { background-color:#33CC99;color:#fff;padding:10px 15px;;margin:0; }
     h3 { margin:40px 0 0; }
     ul { list-style-type:none;padding:0; }
     li { display:inline-block;margin:0 10px; }
