@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-2 sidebar">
-                    <Sidebar msg="Welcome to Your Vue.js App"/>
+                    <Sidebar />
                 </div>
                 <div class="col-10 mapbox">
                     <MapBox />

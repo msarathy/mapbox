@@ -41,6 +41,7 @@
                     property.title = this.$options.jsonData.features[data].properties.project.Title;
                     property.address = this.$options.jsonData.features[data].properties.project.Address;
                     property.suburb = this.$options.jsonData.features[data].properties.project.Suburb;
+                    property.coordinates = [ this.$options.jsonData.features[data].properties.project.Long, this.$options.jsonData.features[data].properties.project.Lat];
                     property.long = this.$options.jsonData.features[data].properties.project.Long;
                     property.lat = this.$options.jsonData.features[data].properties.project.Lat;
 
