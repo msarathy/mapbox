@@ -15,11 +15,13 @@
 </template>
 
 <script>
+import { store } from './store'
 import Sidebar from './components/Sidebar.vue'
 import MapBox from './components/MapBox.vue'
 
 export default {
     name: 'App',
+    store,
     components: { Sidebar, MapBox }
 }
 </script>
